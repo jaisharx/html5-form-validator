@@ -1,0 +1,18 @@
+{
+  "name": "html5-form-validator",
+  "version": "1.0.0",
+  "description": "HTML5 form",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaisharx/html5-form-validator.git"
+  },
+  "author": "Jai Sharma <sendtojsharma@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaisharx/html5-form-validator/issues"
+  },
+  "homepage": "https://github.com/jaisharx/html5-form-validator#readme"
+}
