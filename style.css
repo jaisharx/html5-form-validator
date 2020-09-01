@@ -63,7 +63,7 @@ h2 {
 
 .form-control input {
     display: block;
-    font-family: 'Open Sans';
+    font-family: inherit;
     background-color: #f1f1f1;
     border: 2px solid #f0f0f0;
     border-radius: 4px;
