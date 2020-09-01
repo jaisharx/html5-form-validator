@@ -20,33 +20,28 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: #f1f1f1;
-
-    /* background-image: radial-gradient(#0beef9 0%, #48a9fe 74%); */
 }
 
 .vector-art {
     width: 400px;
     height: 400px;
-    background-size: cover;
-
     margin-right: 100px;
+    background-size: cover;
 }
 
 .container {
     width: 440px;
     background-color: #fff;
     border-radius: 5px;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.container:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
 h2 {
+    font-weight: 300;
+    color: rgb(82, 80, 80);
     text-align: center;
-    margin: 0 0 20px;
+    margin-top: -6px;
+    margin-bottom: 20px;
 }
 
 .form {
@@ -60,6 +55,7 @@ h2 {
 }
 
 .form-control label {
+    font-size: 14px;
     color: #777;
     display: block;
     margin-bottom: 5px;
@@ -67,6 +63,7 @@ h2 {
 
 .form-control input {
     display: block;
+    font-family: 'Open Sans';
     background-color: #f1f1f1;
     border: 2px solid #f0f0f0;
     border-radius: 4px;
@@ -74,11 +71,12 @@ h2 {
     padding: 10px;
     font-size: 14px;
 
+    transition: all .2s;
 }
 
 .form-control input:focus {
     outline: 0;
-    border-color: #777;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .form-control.success input {
