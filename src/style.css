@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: radial-gradient( #0beef9 0%, #48a9fe 74%);
+    background-image: radial-gradient(#0beef9 0%, #48a9fe 74%);
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
 .container:hover {
@@ -59,7 +59,7 @@ h2 {
 .form-control input {
     display: block;
     border: 2px solid #f0f0f0;
-    border-radius: 4px; 
+    border-radius: 4px;
     width: 100%;
     padding: 10px;
     font-size: 14px;
@@ -75,6 +75,8 @@ h2 {
 }
 
 .form-control.error input {
+    animation-name: ErrorAnimation;
+    animation-duration: 0.5s;
     border-color: var(--error-color);
 }
 
@@ -102,9 +104,44 @@ h2 {
     margin-top: 20px;
     width: 100%;
 
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
 .form button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes ErrorAnimation {
+    0% {
+        transform: translateX(0px);
+        timing-function: ease-in;
+    }
+    37% {
+        transform: translateX(5px);
+        timing-function: ease-out;
+    }
+    55% {
+        transform: translateX(-5px);
+        timing-function: ease-in;
+    }
+    73% {
+        transform: translateX(4px);
+        timing-function: ease-out;
+    }
+    82% {
+        transform: translateX(-4px);
+        timing-function: ease-in;
+    }
+    91% {
+        transform: translateX(2px);
+        timing-function: ease-out;
+    }
+    96% {
+        transform: translateX(-2px);
+        timing-function: ease-in;
+    }
+    100% {
+        transform: translateX(0px);
+        timing-function: ease-in;
+    }
 }
